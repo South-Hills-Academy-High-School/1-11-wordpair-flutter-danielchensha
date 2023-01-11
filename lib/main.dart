@@ -44,6 +44,7 @@ class MyAppState extends ChangeNotifier {
   }
   notifyListeners();
   print(favorites);
+  }
 }
 
 class MyHomePage extends StatelessWidget {
@@ -54,7 +55,7 @@ class MyHomePage extends StatelessWidget {
 
     return Scaffold(
       body: Center(
-        child: Corlumn(
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text('A random idea:'),
